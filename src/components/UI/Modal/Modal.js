@@ -7,7 +7,7 @@ import Backdrop from '../Backdrop/Backdrop';
 // This will be used by React.memo to determine if the component should render, 
 // it will render when the result of this function is false
 const areEqual = (prevProps, nextProps) => {
-   return nextProps.show === prevProps.show;
+   return nextProps.show === prevProps.show && nextProps.children === prevProps.children;
 }
 
 const modal = props => (
