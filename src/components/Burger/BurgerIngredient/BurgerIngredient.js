@@ -19,16 +19,16 @@ class BurgerIngredient extends Component {
                 );
                 break;
             case ('meat'):
-                ingredient = <div className={styles['Meat']}></div>
+                ingredient = <div onClick={this.props.removed} className={styles['Meat']}></div>
                 break;
             case ('cheese'):
-                ingredient = <div className={styles['Cheese']}></div>
+                ingredient = <div onClick={this.props.removed} className={styles['Cheese']}></div>
                 break;
             case ('salad'):
-                ingredient = <div className={styles['Salad']}></div>
+                ingredient = <div onClick={this.props.removed} className={styles['Salad']}></div>
                 break;
             case ('bacon'):
-                ingredient = <div className={styles['Bacon']}></div>
+                ingredient = <div onClick={this.props.removed} className={styles['Bacon']}></div>
                 break;
             default:
                 ingredient = null;

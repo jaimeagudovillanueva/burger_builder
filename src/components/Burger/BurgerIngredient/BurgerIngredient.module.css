@@ -80,13 +80,13 @@
     box-shadow: inset 1px 3px #c9c9c9;
   }
   
-
 .Meat {
     width: 80%;
     height: 8%;
     background: linear-gradient(#7f3608, #702e05);
     margin: 2% auto;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .Cheese {
@@ -95,6 +95,7 @@
     margin: 2% auto;
     background: linear-gradient(#f4d004, #d6bb22);
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .Salad {
@@ -103,6 +104,7 @@
     margin: 2% auto;
     background: linear-gradient(#228c1d, #91ce50);
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .Bacon {
@@ -110,4 +112,5 @@
     height: 3%;
     background: linear-gradient(#bf3813, #c45e38);
     margin: 2% auto;
+    cursor: pointer;
 }
