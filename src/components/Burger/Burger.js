@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 
@@ -27,4 +28,7 @@ const burger = props => {
     );
 };
 
-export default burger;
+// If we wrap the class with withRouter we can have access to Router params such as history, 
+// match and location. This is needed because we only have access to these params in components 
+// mapped directly with Router
+export default withRouter(burger);
