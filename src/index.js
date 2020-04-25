@@ -12,8 +12,10 @@ import burgerBuilderReducer from './store/reducers/burgerBuilder';
 import orderReducer from './store/reducers/order';
 import auxReducer from './store/reducers/auth';
 
-// We need to add this in order to have redux tools working
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+// We need to add this in order to have redux tools working. 
+// The variable NODE_ENV is automatically created by create react app with development value
+const composeEnhancers = process.env.NODE_ENV === 'development' 
+  ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : null || compose;
 
 const rootReducer = combineReducers({
   burgerBuilder: burgerBuilderReducer,
